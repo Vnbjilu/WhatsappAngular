@@ -1,0 +1,5 @@
+<input type="text" name="mytext" #mytext>
+ <input type="button" class="btn btn-primary" value="send" (click)="sendData(mytext.value)">
+ <p *ngFor="let msgs of msg">
+    {{msgs}}
+ </p>
